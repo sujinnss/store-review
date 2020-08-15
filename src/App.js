@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Router, Link } from '@reach/router'
+import StoreList from './components/StoreList'
+import Store from "./components/Store";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div>
+            <Router>
+                <StoreList path={"/"} />
+                <StoreList path={"/storeList"} />
+                <Store path={"/storeList/:id"} />
+            </Router>
+        </div>
+    )
 }
 
-export default App;
+export default App

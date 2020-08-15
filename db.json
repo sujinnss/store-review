@@ -1,0 +1,47 @@
+{
+  "stores": [
+    {"id": 1, "name": "마키노차야 광교점", "location": "경기 수원시 영통구 광교중앙로 145", "category": "한식"},
+    {"id": 2, "name": "스시다이닝준 수원광교점", "location": "경기 수원시 영통구 센트럴타운로100번길 8 A타워 102호", "category": "일식"},
+    {"id": 3, "name": "인기명 수원광교점", "location": "경기 수원시 영통구 센트럴타운로 107 월드스퀘어 1층 9, 10호", "category": "해물,생선 요리"},
+    {"id": 4, "name": "335kitchen 광교아브뉴프랑점", "location": "아브뉴프랑 맛집 335키친", "category": "샤브샤브뷔폐"},
+    {"id": 5, "name": "감성타코 광교점", "location": "경기 수원시 영통구 광교중앙로 145 지하1층", "category": "퓨전"},
+    {"id": 6, "name": "후라토식당 아브뉴프랑광교점", "location": "경기 수원시 영통구 센트럴타운로 85 지1층 cb19,20호", "category": "일식"}
+  ],
+  "menus": [
+    { "id": 1, "storeId": 1, "name": "뷔폐 1인 성인/평일런치", "price": 29900 },
+    { "id": 2, "storeId": 1, "name": "뷔폐 1인 성인/주말&공휴일", "price": 49900 },
+    { "id": 3, "storeId": 1, "name": "뷔페1인 초등학생/평일 디너", "price": 28600 },
+    { "id": 4, "storeId": 2, "name": "평일 성인", "price": 19900 },
+    { "id": 5, "storeId": 2, "name": "초등학생", "price": 15900 },
+    { "id": 6, "storeId": 3, "name": "조갈찜A (2인)", "price": 59000 },
+    { "id": 7, "storeId": 3, "name": "조갈찜B (3인)", "price": 79000 },
+    { "id": 8, "storeId": 3, "name": "랍스터조갈찜A (2인)", "price": 89000 },
+    { "id": 9, "storeId": 4, "name": "소고기 샤브샤브(평일 점심)", "price": 16900 },
+    { "id": 10, "storeId": 4, "name": "얼큰 전복대파탕(평일 점심)", "price": 18900 },
+    { "id": 11, "storeId": 4, "name": "어린이(7세~초등학생)", "price": 9000 },
+    { "id": 12, "storeId": 5, "name": "감성그릴파히타", "price": 38000 },
+    { "id": 13, "storeId": 5, "name": "콰카몰리쉬림프퀘사디아", "price": 14000 },
+    { "id": 14, "storeId": 6, "name": "규카츠", "price": 15000 },
+    { "id": 15, "storeId": 6, "name": "스테키정식", "price": 14000 },
+    { "id": 16, "storeId": 6, "name": "야마카타 민치카레", "price": 12000 }
+  ],
+  "reviews": [
+    { "id": 1, "storeId": 1, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 2, "storeId": 1, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 3, "storeId": 2, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 4, "storeId": 2, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 5, "storeId": 2, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 6, "storeId": 3, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 7, "storeId": 3, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 8, "storeId": 4, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 9, "storeId": 5, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 10, "storeId": 5, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 11, "storeId": 5, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 12, "storeId": 6, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 13, "storeId": 6, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 14, "storeId": 6, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 15, "storeId": 6, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 16, "storeId": 6, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 },
+    { "id": 17, "storeId": 6, "title": "json-server", "summary": "", "author": "typicode", "createTime": 0 }
+  ]
+}
