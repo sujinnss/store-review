@@ -1,11 +1,11 @@
 {
   "stores": [
-    {"id": 1, "name": "마키노차야 광교점", "location": "경기 수원시 영통구 광교중앙로 145", "category": "한식"},
-    {"id": 2, "name": "스시다이닝준 수원광교점", "location": "경기 수원시 영통구 센트럴타운로100번길 8 A타워 102호", "category": "일식"},
-    {"id": 3, "name": "인기명 수원광교점", "location": "경기 수원시 영통구 센트럴타운로 107 월드스퀘어 1층 9, 10호", "category": "해물,생선 요리"},
-    {"id": 4, "name": "335kitchen 광교아브뉴프랑점", "location": "아브뉴프랑 맛집 335키친", "category": "샤브샤브뷔폐"},
-    {"id": 5, "name": "감성타코 광교점", "location": "경기 수원시 영통구 광교중앙로 145 지하1층", "category": "퓨전"},
-    {"id": 6, "name": "후라토식당 아브뉴프랑광교점", "location": "경기 수원시 영통구 센트럴타운로 85 지1층 cb19,20호", "category": "일식"}
+    {"id": 1, "name": "마키노차야 광교점", "location": "경기 수원시 영통구 광교중앙로 145", "category": "한식" , "img":"https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fldb.phinf.naver.net%2F20190417_56%2F1555491150113I6E7o_JPEG%2F428_322.jpg" },
+    {"id": 2, "name": "스시다이닝준 수원광교점", "location": "경기 수원시 영통구 센트럴타운로100번길 8 A타워 102호", "category": "일식", "img":"https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fldb.phinf.naver.net%2F20200309_242%2F1583686850920WrVW1_JPEG%2FGCWi7zodREeFbLL3ulluxnvj.jpg"},
+    {"id": 3, "name": "인기명 수원광교점", "location": "경기 수원시 영통구 센트럴타운로 107 월드스퀘어 1층 9, 10호", "category": "해물,생선 요리", "img":"https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fldb.phinf.naver.net%2F20190717_98%2F1563351649619gdSrN_JPEG%2FaEa3Pwkw6SNUJQe_UzhYwAt7.jpg"},
+    {"id": 4, "name": "335kitchen 광교아브뉴프랑점", "location": "아브뉴프랑 맛집 335키친", "category": "샤브샤브뷔폐","img":"https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fldb.phinf.naver.net%2F20151222_116%2F1450768351964hJ5NL_JPEG%2F167172564250728_0.jpg"},
+    {"id": 5, "name": "감성타코 광교점", "location": "경기 수원시 영통구 광교중앙로 145 지하1층", "category": "퓨전","img":"https://search.pstatic.net/common/?autoRotate=true&amp;quality=95&amp;type=f180_180&amp;src=http%3A%2F%2Fldb.phinf.naver.net%2F20180922_178%2F15375948662569Yihj_JPEG%2Ft5e2jfrfRnjrXfIWfTMfeBxP.jpg"},
+    {"id": 6, "name": "후라토식당 아브뉴프랑광교점", "location": "경기 수원시 영통구 센트럴타운로 85 지1층 cb19,20호", "category": "일식","img":"https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fldb.phinf.naver.net%2F20190422_266%2F1555859788819bbWMk_JPEG%2F66Kw5hrTHRhxcuCdHzjunw7r.jpg"}
   ],
   "menus": [
     { "id": 1, "storeId": 1, "name": "뷔폐 1인 성인/평일런치", "price": 29900 },
