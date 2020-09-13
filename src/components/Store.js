@@ -42,16 +42,23 @@ const Store = (invoice) => {
     }, [])
 
     //console.log("invoice_id:",typeof(parseInt(invoice.id)))
-    const storeDatas = storeList.filter((data) => data.id === parseInt(invoice.id))
-    const menueDatas = storeMenues.filter((data) => data.storeId === parseInt(invoice.id))
-    const reviewDatas = storeReviews.filter((data) => data.storeId === parseInt(invoice.id))
+    const storeDatas = storeList.filter(
+        (data) => data.id === parseInt(invoice.id),
+    )
+    const menueDatas = storeMenues.filter(
+        (data) => data.storeId === parseInt(invoice.id),
+    )
+    const reviewDatas = storeReviews.filter(
+        (data) => data.storeId === parseInt(invoice.id),
+    )
 
-    console.log("storeDatas:",storeDatas)
-    console.log("menueDatas:",menueDatas)
-    console.log("reviewDatas:",reviewDatas)
+    console.log('storeDatas:', storeDatas)
+    console.log('menueDatas:', menueDatas)
+    console.log('reviewDatas:', reviewDatas)
 
-    console.log(storeDatas.map((data)=>data.openTime).map((time)=>time.everyDay))
-    console.log(invoice)
+    console.log(menueDatas.map((data)=>data.name))
+    console.log(menueDatas.map((data)=>data.price))
+
     return (
         <Layout>
             <Header>header</Header>
@@ -76,24 +83,34 @@ const Store = (invoice) => {
                         <Link href="#reviews" title="리뷰" />
                         <Link href="#map" title="길찾기" />
                     </Anchor>
-                    <Card></Card>
                     <Card
                         id="detail"
                         title="상세 정보"
                         bordered={true}
                         style={{ width: '50%', margin: 'auto' }}
                     >
-                        <div >
+                        <div>
                             <div>
                                 <span>위치: </span>
-                                <sapn>{storeDatas.map((data)=>data.location)}</sapn>
+                                <sapn>
+                                    {storeDatas.map((data) => data.location)}
+                                </sapn>
                             </div>
                             <div>
                                 <span>영업시간: </span>
-                                <span>{storeDatas.map((data)=>data.openTime).map((time)=>time.everyDay)}</span>
+                                <span>
+                                    {storeDatas
+                                        .map((data) => data.openTime)
+                                        .map((time) => time.everyDay)}
+                                </span>
                             </div>
-
                         </div>
+                    </Card>
+                    <Card
+                        id="menu"
+                        title="메뉴"
+                        bordered={true}
+                        style={{ width: '50%', margin: 'auto'}}>
                     </Card>
                 </Content>
             </Layout>
