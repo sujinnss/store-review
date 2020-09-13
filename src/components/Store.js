@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import StoreStyle from '../styles/StoreStyle.css'
 import { Layout, Anchor, Card } from 'antd'
-import { getMenus, getReviews } from '../api/Service'
-
+import { getMenus, getReviews, getStores } from '../api/Service'
 
 // Row는 바닥 => -  , Col은 기둥 |
 
-const Store = () => {
+const Store = (invoice) => {
+    const [storeList, setStoreList] = useState([])
     const [storeReviews, setStoreReviews] = useState([])
     const [storeMenues, setStoreMenues] = useState([])
 
-    const { Header, Footer, Content } = Layout
+    const { Header, Content } = Layout
     const { Link } = Anchor
+
+    const getStoreList = () =>
+        getStores()
+            .then((r) => {
+                setStoreList(r.data)
+            })
+            .catch((e) => console.error(e))
 
     const getStoreMenue = () => {
         return getMenus()
@@ -30,17 +36,26 @@ const Store = () => {
     }
 
     useEffect(() => {
+        getStoreList()
         getStoreMenue()
         getStoreReview()
     }, [])
 
-    console.log('메뉴:', storeMenues)
-    console.log('리뷰:', storeReviews)
+    //console.log("invoice_id:",typeof(parseInt(invoice.id)))
+    const storeDatas = storeList.filter((data) => data.id === parseInt(invoice.id))
+    const menueDatas = storeMenues.filter((data) => data.storeId === parseInt(invoice.id))
+    const reviewDatas = storeReviews.filter((data) => data.storeId === parseInt(invoice.id))
 
+    console.log("storeDatas:",storeDatas)
+    console.log("menueDatas:",menueDatas)
+    console.log("reviewDatas:",reviewDatas)
+
+    console.log(storeDatas.map((data)=>data.openTime).map((time)=>time.everyDay))
+    console.log(invoice)
     return (
         <Layout>
             <Header>header</Header>
-            <Layout style={{height:"100%"}}>
+            <Layout style={{ height: '100%' }}>
                 <Content>
                     <Anchor
                         style={{
@@ -61,18 +76,24 @@ const Store = () => {
                         <Link href="#reviews" title="리뷰" />
                         <Link href="#map" title="길찾기" />
                     </Anchor>
-                    <Card>
-
-                    </Card>
+                    <Card></Card>
                     <Card
                         id="detail"
-                        title="상세 내용"
+                        title="상세 정보"
                         bordered={true}
                         style={{ width: '50%', margin: 'auto' }}
                     >
-                        <p>Card content</p>
-                        <p>Card content</p>
-                        <p>Card content</p>
+                        <div >
+                            <div>
+                                <span>위치: </span>
+                                <sapn>{storeDatas.map((data)=>data.location)}</sapn>
+                            </div>
+                            <div>
+                                <span>영업시간: </span>
+                                <span>{storeDatas.map((data)=>data.openTime).map((time)=>time.everyDay)}</span>
+                            </div>
+
+                        </div>
                     </Card>
                 </Content>
             </Layout>
